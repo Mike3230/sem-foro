@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body {
+            background-color: #fcd695;
+            background-image: url(imagens/background.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            min-height: 100vh;
+            margin: 0;
+        }
+        table{
+            min-height: 100vh;
+        }
+    </style>
+  </head>  
+<body>
+    <center>
+<table border="0" style="width: 80%;">
+    <tr>
+        <th rowspan="3" style="width: 25%;"></th>
+        <th >
+        </th>
+        <th style="font-size:35px;">
+            Semáforo
+        </th>
+        <th>
+        </th>
+    </tr>
+    <tr >
+              <th><button style="background-color: red; width: 50%;" onclick="document.getElementById('sem').src='imagens/vermelho.png'">Vermelho</button></th>
+        <th rowspan="2">
+            <img id="sem" src="imagens/desligadi.png" style="width: 180px;">
+        </th>
+        <th><button style="background-color: greenyellow; width: 50%;" onclick="document.getElementById('sem').src='imagens/verde.png'">Verde</button></th>
+  
+
+    </tr>
+    <tr>
+        <th><button style="width: 50%;" onclick="document.getElementById('sem').src='imagens/desligadi.png'">Desligado</button></th>
+        <th><button style="background-color: yellow; width: 50%;  " onclick="document.getElementById('sem').src='imagens/amarelo.png'">Amarelo</button></th>
+    </tr>
+    <tr style="height: 45%;"></tr>
+
+
+    
+</table>
+</body>
+</center>
+</html>
